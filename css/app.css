@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #d5d5d5;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-1{
+    background: url('../imgs/bg_01.jpg') center no-repeat fixed;
+}
+
+.bg-2{
+    background: url('../imgs/bg_02.jpg') center no-repeat fixed;
+}
+
+.bg-3{
+    background: url('../imgs/bg_03.jpg') center no-repeat fixed;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2{
+    overflow: hidden;
+    margin: 0;
+    padding: 20px 10% 20px 10%;
+    max-width: 600px;
+}
+
+.push-down{
+    position: relative;
+    top: 100px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.banner-image{
+    width: 100vw;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+.main-title{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.main-title-color{
+    color: #00cca1;
+}
+
+h1{
+    position: relative;
+    top: -70px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #00dbab;
+    background-image: linear-gradient(to right, #006f69, #003b50, #01484b);
+    text-align: center;
+    line-height: 64px;
+    width: 70vw;
+    max-width: 500px;
+    height: 64px;
+    border-radius: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #004857;
+    line-height: 100%;
+    padding-bottom: 15px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+h2 .o-color{
+    color: #00cca1;
+}
+
+.h2-trauma{
+    margin-top: 0;
+}
+
+.h2-left{
+    text-align: left;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    line-height: 120%;
+    padding-left: 5px;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #004857;
+    padding-bottom: 5px;
+}
+
+.text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    line-height: 120%;
+}
+
+.text-padding{
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.text-margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text-pushup{
+    position: relative;
+    top: -40px;
+}
+
+#text-about{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: 40px 20px 30px 20px;
+}
+
+.bold-italic{
+    font-weight: 600;
+    font-style: italic;
+}
+
+.hint{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #00cca1;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.hint-margin{
+    margin-top: -40px;
+}
+
+.items{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #00cca1; 
+}
+
+.ilustration{
+    width: 75vw;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #9c9c9c;
+    display: block;
+    margin: auto;
+}
+
+.image-trauma{
+    width: 70vw;
+    max-width: 500px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.ilustration-prevention{
+    height: 80vw;
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#skate{
+    position: relative;
+    top: -60px;
+}
+
+#logo{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#logo-size{
+    height: 160px;
+}
+
+.box-container{
+    position: absolute;
+    bottom: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 640px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-trauma{
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.box-prevenir{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.box-prevention-ilustration{
+    overflow: hidden;
+    margin-top: 40px;
+    max-width: 500px;
+    border: 1px solid #00cca1;
+    border-radius: 10px 10px 40px 40px;
+}
+
+.icon{
+    height: 60px;
+    margin: 20px;
+}
+
+.btn-1 {
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00dbab;
+    background: none;
+    border: 1px solid #00dbab;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+}
+
+.btn-1:hover{
+    background-color: rgba(0, 220, 170, 0.1);
+    border-radius: 20px;
+}
+.btn-1:active{
+    color: #06b18c;
+    border-radius: 20px;
+}
+
+.btn-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right, #006f69, #003b50, #01484b);
+    max-width: 400px;
+    height: 64px;
+    border: 1px solid #00dbab;
+    border-radius: 32px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 20px;
+}
+
+.btn-2-text{
+    line-height: 110%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #00dbab;
+    margin-left: 10px;
+}
+
+.btn-trauma{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #00dbab;
+    background-image: linear-gradient(to right, #006f69, #003b50, #01484b);
+    text-align: center;
+    line-height: 40px;
+    width: 70vw;
+    max-width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+#logo-box{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border-radius: 25px;
+    height: 90px;
+    width: 300px;
+}
+
+.logo-sec{
+    width: 120px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.foot{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 60px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #006f69, #003b50, #01484b);
+    width: 140px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.separator{
+    width: 10vw;
+}
+
+.separator-2{
+    width: 30px;
+}
+
+/* Form style */
+
+#form-container{
+    visibility: visible;
+    display: none;
+    text-align: center;
+    width: 80%;
+}
+
+#contatos-container{
+    display: none;
+    text-align: center;
+    width: 80vw;
+}
+
+.form-field{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00dbab;
+    background: none;
+    border: 1px solid #00dbab;
+    border-radius: 12px;
+    height: 24px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+::placeholder{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #00dbab;
+    background: none;
+}
+
+.label{
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-contato{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-image: linear-gradient(to right, #07b682, #11b681, #0fe1ba);
+    box-shadow: 2px 2px 4px #1f2023;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-contato{
+   font-size: 1.2rem;
+   color: #fff;
+   text-align: left;
+   margin-top: 40px;
+}
+
+.text-contato-color{
+    color: #00dbab;
+    margin-top: 0;
+}
+
+.edition{
+    display: flex;
+    align-items: center;
+    float: right;
+    background: none;
+    color: #fff;
+    font-size: 0.7rem;
+    text-decoration: underline;
+    border: none;
+    text-align: right;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.edition-padding{
+    margin-left: 5px;
+}
+
