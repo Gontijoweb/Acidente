@@ -1,5 +1,3 @@
-console.log("helo");
-
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 if (workbox) {
@@ -13,12 +11,12 @@ if (workbox) {
         /(.*)others(.*)\.(?:png|gif|jpg)/,
         new workbox.strategies.CacheFirst({
             cacheName: "images",
-            // plugins: [
-            //     new workbox.expiration.Plugin({
-            //         maxEntries: 50,
-            //         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-            //     })
-            // ]
+                // plugins: [
+                //     new ExpirationPlugin({
+                //     maxEntries: 60,
+                //     maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+                //     }),
+                // ],
         })
     );
     /* Make your JS and CSS âš¡ fast by returning the assets from the cache,
