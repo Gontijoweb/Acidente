@@ -2,6 +2,7 @@ var formContainer = document.getElementById('form-container');
 var formContatos = document.getElementById('form-contatos');
 var v_respNumber = document.getElementById('resp_number_input');
 var v_dentistaNumber = document.getElementById('dentista_number_input');
+var erroMessage = document.getElementById('erro');
 
 var contatosContainer = document.getElementById('contatos-container');
 var editarContatos = document.getElementById('editar');
@@ -10,6 +11,7 @@ formContatos.addEventListener('submit', setContatos);
 v_respNumber.addEventListener('keyup', phoneValidation);
 v_dentistaNumber.addEventListener('keyup', phoneValidation);
 editarContatos.addEventListener('click', configContatos);
+erroMessage.addEventListener('click', closeErro);
 
 function verifyContatos(){
     if (typeof(Storage) !== "undefined") {
@@ -36,13 +38,15 @@ function setContatos(e){
     var dentista_name_input = document.getElementById('dentista_name_input').value;
     var dentista_number_input = document.getElementById('dentista_number_input').value; 
 
-    if (resp_name_input != "" || resp_number_input != "" || dentista_name_input != "" || dentista_number_input!= "") {
+    if (resp_name_input != "" && resp_number_input != "" && dentista_name_input != "" && dentista_number_input!= "") {
         localStorage.setItem('resp_name', resp_name_input);
         localStorage.setItem('resp_number', resp_number_input);
         localStorage.setItem('dentista_name', dentista_name_input);
         localStorage.setItem('dentista_number', dentista_number_input);
 
         verifyContatos();
+        }else{
+            erroMessage.style.display = 'block';
     }
     
    
@@ -71,8 +75,12 @@ function configContatos() {
     contatosContainer.style.display = 'none';
     formContainer.style.display = 'block';
 
-    document.getElementById('resp_name_input').setAttribute('placeholder', localStorage.resp_name);
-    document.getElementById('resp_number_input').setAttribute('placeholder', localStorage.resp_number);
-    document.getElementById('dentista_name_input').setAttribute('placeholder', localStorage.dentista_name);
-    document.getElementById('dentista_number_input').setAttribute('placeholder', localStorage.dentista_number);  
+    document.getElementById('resp_name_input').setAttribute('value', localStorage.resp_name);
+    document.getElementById('resp_number_input').setAttribute('value', localStorage.resp_number);
+    document.getElementById('dentista_name_input').setAttribute('value', localStorage.dentista_name);
+    document.getElementById('dentista_number_input').setAttribute('value', localStorage.dentista_number);  
+}
+
+function closeErro() {
+    document.getElementById('erro').style.display = 'none';
 }
