@@ -5,7 +5,7 @@
   
 /* MENU STYLES */
 .menu-wrap {
-    background-image: linear-gradient(to right, #006f69, #003b50, #01484b);
+    background: none;
     width: 100%;
     max-width: 640px;
     height: 100px;
@@ -94,7 +94,7 @@
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
-    transform: translateY(99px);
+    transform: translateY(10px);
     transition-duration: var(--menu-speed);
 }
 
@@ -105,30 +105,31 @@
 
 .menu-wrap .menu {
     position: fixed;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 100vw;
     max-width: 640px;
     height: 100vh;
     visibility: hidden;
     overflow: hidden;
-    z-index: -1;    
+    z-index: -1;
 }
 
 .menu-wrap .menu > div {
     background-image: linear-gradient(to right, #006f69, #003b50, #01484b);
     width: 100vw;
     max-width: 640px;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex: none;    
     justify-content: left;
     transform: translateY(0);
     transition: all 0.4s ease;
-    z-index: -1;
+    z-index: -1
 }
 
 .menu-wrap .menu > div > div {
+    margin-top: 8vh;
     text-align: left;
     opacity: 0;
     transition: opacity 0.4s ease;
@@ -147,17 +148,6 @@
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
-}
-
-.logo-horizontal{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-}
-
-.logo-horizontal-size{
-    width:150px;
 }
 
 .detail{
