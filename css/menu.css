@@ -139,8 +139,8 @@
     border-bottom: 1px solid #00dbab;
     font-weight: 600;
     color: #fff;
-    font-size: 1.2rem;
-    padding-top: 0.7rem; 
+    font-size: 1rem;
+    padding-top: 0.5rem; 
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -168,6 +168,7 @@
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 0.8rem;
 }
 
 

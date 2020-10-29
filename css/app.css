@@ -525,7 +525,7 @@ footer{
 }
 
 .install-box{
-    width: 100%;
+    width: 100vw;
     max-width: 640px;
     height: 100px;
     position: fixed;
@@ -555,6 +555,7 @@ footer{
     height: fit-content;
     width: fit-content;
     padding: 5px;
+    cursor: pointer;
 }
 
 @media only screen and (min-height: 1080px) {
