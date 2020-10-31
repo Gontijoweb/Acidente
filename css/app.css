@@ -66,7 +66,7 @@ body{
 
 .banner-image{
     width: 100vw;
-    max-width: 600px;
+    max-width: 640px;
     display: block;
     margin: auto;
 }
@@ -330,6 +330,22 @@ p{
     width: 150px;
 }
 
+.btn-1-es {
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00dbab;
+    background: none;
+    border: 1px solid #00dbab;
+    border-radius: 20px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .btn-1:hover{
     background-color: rgba(0, 220, 170, 0.1);
     border-radius: 20px;
@@ -406,13 +422,13 @@ footer{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
 .foot-btn{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     line-height: 40px;
     font-size: 1rem;
@@ -420,15 +436,23 @@ footer{
     text-decoration: none;
     color: #fff;
     background-image: linear-gradient(to right, #006f69, #003b50, #01484b);
-    width: 100px;
+    width: fit-content;
     height: 40px;
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
+.right-icon{
+    padding-left: 10px;
+}
+
+.left-icon{
+    padding-right: 10px;
+}
+
 .separator{
-    width: 10vw;
+    width: 5vw;
 }
 
 .separator-2{
@@ -604,6 +628,17 @@ footer{
 
 .install-icon{
     margin: 10px;
+}
+
+.flag-icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 25px;
+    left: 15px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
 }
 
 @media only screen and (min-height: 1080px) {
